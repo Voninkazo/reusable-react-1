@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const Badge = () => {
-	return <span>Hello, world!</span>;
+const Badge = ({children,color}) => {
+return <span className={`badge ${color}`}>{children}</span>;
 };
 
 const App = () => {
